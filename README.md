@@ -1,2 +1,2 @@
-# bakerman-githun.io
+# bakerman-github.io
 My first hosting
