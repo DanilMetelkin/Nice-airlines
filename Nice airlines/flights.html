@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0;">
+    <title>ООО "Авакомпания "Хорошие авиалинии"</title>
+    <link rel="stylesheet" href="css/fligths.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__inside-part">
+                <div class="header__body">
+                <div class="header__left-part">
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <div class="header__logo">
+                        <a href="index.html"><img src="img/icons/airlines_logo.svg" alt="oops" class="header__logo-image header__logo-image_big_size"></a>
+                        <a href="index.html"><img src="img/icons/airlines_logo_small.svg" alt="oops" class="header__logo-image header__logo-image_small_size"></a>
+                    </div>
+                    <nav class="header__navigation">
+                        <ul class="header__list">
+                            <li class="header__list-item"><a href="#" class="header__link">Онлайн регистрация</a></li>
+                            <li class="header__list-item"><a href="#" class="header__link">Управление бронированием</a></li>
+                            <li class="header__list-item"><a href="#" class="header__link">Информация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__right-part">
+                    <div class="header__search">
+                        <!-- <img src="img/search.svg" alt="oops"> -->
+                        <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.85793 19.7159C15.3023 19.7159 19.7159 15.3023 19.7159 9.85793C19.7159 4.41354 15.3023 0 9.85793 0C4.41354 0 0 4.41354 0 9.85793C0 15.3023 4.41354 19.7159 9.85793 19.7159ZM9.85793 16.6028C13.583 16.6028 16.6028 13.583 16.6028 9.85793C16.6028 6.13283 13.583 3.11304 9.85793 3.11304C6.13283 3.11304 3.11304 6.13283 3.11304 9.85793C3.11304 13.583 6.13283 16.6028 9.85793 16.6028Z" fill="#4D1D9C"/>
+                            <path d="M14.7121 16.3612C15.6577 15.6094 17.0336 15.7665 17.7854 16.7121L23.1868 23.506C23.9385 24.4516 23.7814 25.8275 22.8359 26.5793V26.5793C21.8903 27.331 20.5144 27.1739 19.7626 26.2284L14.3612 19.4344C13.6094 18.4889 13.7665 17.1129 14.7121 16.3612V16.3612Z" fill="#4D1D9C"/>
+                            </svg>                       
+                    </div>
+                    <div class="header__language">
+                        <img src="img/icons/RUS.png" alt="oops">
+                    </div>
+                    <div class="header__currency">RUB</div>
+                    <div class="header__authentication">Войти</div>
+                </div>
+            </div>
+            </div>
+        </header>
+        <div class="content">
+            <main class="block">
+                <div class="block__inside-part container">
+                <div class="block__image">
+                    <img class="block__image-item block__image-item_1080p" src="img/1080p/airplane.jpg" alt="oops">
+                    <img class="block__image-item block__image-item_1440p" src="img/1440p/airplaneX.jpg" alt="oops">
+                    <div class="block__rectangle-gradient">
+                        <h1 class="block__text">Расписание полетов Nice airlines</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="table">
+            <div class="table__inside-part container">
+            <div class="table__row table__row_second">
+                <div class="table__square-heading">
+                    <h4 class="table__heading">Авиабилеты/Рейсы</h4>
+                </div>
+                <div class="table__inputs">
+                    <div class="table__arrival-place">
+                        <input class="table__input-arrivial-place" type="text" name="arrival-place" value="" placeholder="Откуда">
+                    </div>
+                    <button class="table__change-postions" type="button" value="" name="">
+                        <img src="img/icons/change_position.svg" alt="oops">
+                    </button>
+                    <div class="table__depart-place">
+                        <input class="table__input-depart-place" type="text" name="depart-place" value="" placeholder="Куда">
+                    </div>
+                    <div class="table__date">
+                        <input class = "table__date-of-depart" type="date" name="date-of-depart" value="" placeholder="Туда">
+                        <input class = "table__date-of-arrive" type="date" name="date-of-arrive" value="" placeholder="Обратно">
+                    </div>
+                    <div class="table__passengers">
+                        <input class="table__input-passengers" type="number" name="passengers" value="" placeholder="Пассажиры">
+                    </div>
+                    <div class="table__button">
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.30908 12.6745C9.79347 12.6745 12.6182 9.83719 12.6182 6.33724C12.6182 2.83728 9.79347 0 6.30908 0C2.82467 0 0 2.83728 0 6.33724C0 9.83719 2.82467 12.6745 6.30908 12.6745ZM6.30908 10.6732C8.69312 10.6732 10.6258 8.73193 10.6258 6.33724C10.6258 3.94253 8.69312 2.00124 6.30908 2.00124C3.92501 2.00124 1.99235 3.94253 1.99235 6.33724C1.99235 8.73193 3.92501 10.6732 6.30908 10.6732Z" fill="white"/>
+                            <path d="M9.41575 10.5179C10.0209 10.0346 10.9015 10.1356 11.3827 10.7435L14.8396 15.111C15.3206 15.7189 15.2201 16.6034 14.615 17.0867C14.0098 17.5699 13.1292 17.4689 12.6481 16.8611L9.19117 12.4935C8.71002 11.8857 8.81056 11.0012 9.41575 10.5179Z" fill="white"/>
+                            </svg>
+                    </div>
+                </div>
+             </div>
+            </div>
+            </div>
+        </di@"v>
+        <footer class="footer">
+            <div class="footer__inside container">
+                <div class="footer__row footer__row_first">
+                    <nav class="footer__navigation">
+                        <div class="footer__column">
+                            <a href="contacts.html" class="footer__link">Контакты</a>
+                            <a href="flights.html" class="footer__link">Расписание рейсов</a>
+                        </div>
+                        <div class="footer__column">
+                            <a href="partners.html" class="footer__link">Партнеры</a>
+                            <a href="about.html" class="footer__link">О компании</a>
+                        </div>
+                    </nav>
+                    <div class="footer__socials">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="https://twitter.com/?lang=ru" rel="noreferrer" target="_blank" class="footer__social-link"><img src="img/icons/Twitter.svg" alt="oops" class="footer__image"></a></li>
+                                <li class="footer__list-item"><a href="https://ru.linkedin.com/" rel="noreferrer" target="_blank" class="footer__social-link"><img src="img/icons/Linkedin.svg" alt="oops" class="footer__image"></a></li>
+                                <li class="footer__list-item"><a href="https://www.facebook.com/" rel="noreferrer" target="_blank" class="footer__social-link"><img src="img/icons/fb.svg" alt="oops" class="footer__image"></a></li>
+                                <li class="footer__list-item"><a href="https://www.instagram.com/" rel="noreferrer" target="_blank" class="footer__social-link"><img src="img/icons/insta.svg" alt="oops" class="footer__image"></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <div class="footer__column">
+                            <p class="contact">Бесплатно по России: 8 (800) 700–07-07</p>
+                            <p class="contact">Москва: +7 (495) 783-07-07</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__row footer__row_copyrights">
+                    <p class="footer__copyrights">Copyright ©2021 All rights reserved</p>
+                </div>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>
