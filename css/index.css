@@ -1147,6 +1147,8 @@ flex: 1 1 60px;
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        position: absolute;
+        left: 0;
     }
     .footer__navigation a {
         font-size: 16px;
@@ -1240,12 +1242,13 @@ flex: 1 1 60px;
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        position: absolute;
+        right: 0;
     }
     }
 
 .footer__copyrights{
     display: block;
-    /* width: calc(273/1152*100%); */
     width: 100%;
     text-align: center;
     color: #21243D;
