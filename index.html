@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Авиабилеты на официальном сайте Nice airlines. Онлайн бронирование билетов на самолет. Регистрация на рейсы авиакомпании">
+    <meta name="keywords" content="Купить авиабилеты, купить авиабилеты на официальном сайте Nice airlines, Nice airlines, nice airlines">
     <title>ООО "Авиакомпания "Хорошие авиалинии"</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="img/icons/favicon.svg">
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -31,7 +35,6 @@
                 </div>
                 <div class="header__right-part">
                     <div class="header__search">
-                        <!-- <img src="img/search.svg" alt="oops"> -->
                         <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.85793 19.7159C15.3023 19.7159 19.7159 15.3023 19.7159 9.85793C19.7159 4.41354 15.3023 0 9.85793 0C4.41354 0 0 4.41354 0 9.85793C0 15.3023 4.41354 19.7159 9.85793 19.7159ZM9.85793 16.6028C13.583 16.6028 16.6028 13.583 16.6028 9.85793C16.6028 6.13283 13.583 3.11304 9.85793 3.11304C6.13283 3.11304 3.11304 6.13283 3.11304 9.85793C3.11304 13.583 6.13283 16.6028 9.85793 16.6028Z" fill="#4D1D9C"/>
                             <path d="M14.7121 16.3612C15.6577 15.6094 17.0336 15.7665 17.7854 16.7121L23.1868 23.506C23.9385 24.4516 23.7814 25.8275 22.8359 26.5793V26.5793C21.8903 27.331 20.5144 27.1739 19.7626 26.2284L14.3612 19.4344C13.6094 18.4889 13.7665 17.1129 14.7121 16.3612V16.3612Z" fill="#4D1D9C"/>
@@ -70,30 +73,32 @@
                 <div class="table__square-heading">
                     <h4 class="table__heading">Авиабилеты</h4>
                 </div>
-                <div class="table__inputs">
+                <!-- <div class="table__inputs"> -->
+                    <form action="index.html" method="POST" name="flights" target="_self" class="table__inputs">
                     <div class="table__arrival-place">
-                        <input class="table__input-arrivial-place" type="text" name="arrival-place" value="" placeholder="Откуда">
+                        <input class="table__input-arrivial-place" type="text" required name="arrival-place" value="" placeholder="Откуда">
                     </div>
                     <button class="table__change-postions" type="button" value="" name="">
                         <img src="img/icons/change_position.svg" alt="oops">
                     </button>
                     <div class="table__depart-place">
-                        <input class="table__input-depart-place" type="text" name="depart-place" value="" placeholder="Куда">
+                        <input class="table__input-depart-place" type="text" required name="depart-place" value="" placeholder="Куда">
                     </div>
                     <div class="table__date">
-                        <input class = "table__date-of-depart" type="date" name="date-of-depart" value="" placeholder="Туда">
-                        <input class = "table__date-of-arrive" type="date" name="date-of-arrive" value="" placeholder="Обратно">
+                        <input class = "table__date-of-depart" type="date" required name="date-of-depart" value="" min="" placeholder="Туда">
+                        <input class = "table__date-of-arrive" type="date" required name="date-of-arrive" value="" min="" placeholder="Обратно">
                     </div>
                     <div class="table__passengers">
-                        <input class="table__input-passengers" type="number" name="passengers" value="" placeholder="Пассажиры">
+                        <input class="table__input-passengers" type="number" required name="passengers" value="" min="1" placeholder="Пассажиры">
                     </div>
-                    <div class="table__button">
+                    <button class="table__button" name="flights__button" type="submit">
                         <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M6.30908 12.6745C9.79347 12.6745 12.6182 9.83719 12.6182 6.33724C12.6182 2.83728 9.79347 0 6.30908 0C2.82467 0 0 2.83728 0 6.33724C0 9.83719 2.82467 12.6745 6.30908 12.6745ZM6.30908 10.6732C8.69312 10.6732 10.6258 8.73193 10.6258 6.33724C10.6258 3.94253 8.69312 2.00124 6.30908 2.00124C3.92501 2.00124 1.99235 3.94253 1.99235 6.33724C1.99235 8.73193 3.92501 10.6732 6.30908 10.6732Z" fill="white"/>
                             <path d="M9.41575 10.5179C10.0209 10.0346 10.9015 10.1356 11.3827 10.7435L14.8396 15.111C15.3206 15.7189 15.2201 16.6034 14.615 17.0867C14.0098 17.5699 13.1292 17.4689 12.6481 16.8611L9.19117 12.4935C8.71002 11.8857 8.81056 11.0012 9.41575 10.5179Z" fill="white"/>
                             </svg>
-                    </div>
-                </div>
+                    </button>
+                </form>
+                <!-- </div> -->
             </div>
         </div>
         </div>
@@ -302,7 +307,7 @@
                 </div>
             </div>
             <div class="footer__row footer__row_copyrights">
-                <p class="footer__copyrights">Copyright ©2021 All rights reserved</p>
+                <p class="footer__copyrights">Copyright ©2022 All rights reserved. </p>
             </div>
         </div>
     </footer>

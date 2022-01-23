@@ -415,7 +415,6 @@ width: 100%;
         background-color: #F8F8F8;
         height: 468px;
         padding: 20px 0 57px 0;
-        margin-bottom: 36px;
     }
 
     .contacts__inside {
@@ -480,11 +479,29 @@ width: 100%;
     }
 
     .contacts__text {
-        height: 125px;
+        height: 140px;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: space-between;
+    }
+
+    .map {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .map__inside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .map__iframe {
+        height: 70vh;
+        width: 100%;
     }
 
 .footer {
