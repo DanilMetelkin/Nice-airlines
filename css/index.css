@@ -409,9 +409,15 @@ padding: 0;
     top: -50px;
 }
 
+@media(max-width: 1620px) {
+    .table__inside-part {
+        width: calc(782/1152*100%);
+    }}
+    
+
 @media(max-width: 1500px) {
 .table__inside-part {
-    width: calc(882/1152*100%);
+    width: calc(982/1152*100%);
 }}
 
 @media(max-width: 1170px) {
@@ -555,6 +561,7 @@ padding: 0;
     text-align: center;
     justify-content: center;
     flex: 0 1 400px;
+    flex-wrap: wrap;
 }
 
 @media(max-width: 910px) {
