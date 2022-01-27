@@ -58,6 +58,12 @@ transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
 opacity: 0.7;
 }
 
+@media (max-width: 594px) {
+    .popup__content {
+        width: 100%;
+    }
+}
+
 .popup.active .popup__content {
 transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
 opacity: 1;
